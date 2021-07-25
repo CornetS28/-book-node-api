@@ -1,0 +1,38 @@
+export default {
+  port: 8080,
+  host: 'localhost',
+  dbUri: 'mongodb://localhost:27017/rest-api',
+  saltWorkFactor: 10,
+  accessTokenTtl: '15m',
+  refreshTokenTtl: '1y',
+  privateKey: `-----BEGIN RSA PRIVATE KEY-----
+Proc-Type: 4,ENCRYPTED
+DEK-Info: DES-EDE3-CBC,B6C2891FCEEA2EDC
+
+w8CUCuFMcrfespcf+etbA6P2EbOIl5FJzvcSPGkcvPfnzp1wdWaa1ZiuSL0jTRJK
+ivq3kmm5kSdO0f+QVOLYC+uyop8Eh5CWX/VoEwiBTFEHXN05wv0kKwRbvMsNaT4l
+acPr3Rvh7Oqok/92CRqCH1ypSzhFiCdLVQEVDGVzlZNtZ3ioQo1pvBhmwlCUazLA
+/yBPMjGknni61rAKYmHi93pHvrwJQ0d52I3JYemhHGvRhq/swLVMBQ2gAp7HHGA0
+CxR5xyq7zCS1SW8QfV2oKM+Bhth6RwcBkFasol7NcWWO+AfF2RQ/E0sbEC+HaxjM
+54WvO7kkqbFgPhiPupNuNKocPniLWZ0oAP5oaTuqX8RtHzzWxxiOa+rwwjMmxyPX
+UENbiA45Aa3xlwAvvbmuknGp5AWFFkjQK4lIVvbEQAdZPpy3TVi0hTWn7Zs5+Fb9
+Kpf+xjjOiptbnfnqd2kSQAu6WWpZcvZNhgfEq8PChwwERws0Gr+XLV7iwSZNrU43
+kyFsxuNlA/9rT3+rJUmGrjXPqZv4pRk5C07yC2R2oOminevoQMNkXhhYFg7Pwr97
+/vV945q2xPhFvcvaT1xllginUTqmL8LvWwOjR4rrQjeEyVhQ3NPYNBpbIxb2BqxJ
+DpcXc49jsaedT2QT+i0FAWtFmJE2muk5qfGlP6b7Hfi0pCUsOVtOBgi2K8D9T4Re
+b2Phpn0FGYG7fC05vF0UfXpvbu//qwJ03nxXRT6DqWGCjutacXnCyZQoA3Eb638E
+5w+QWTlbGSOfhNPUrAA0O0JYC4/P4tt9YWfTZRbzlmx8z8RoBTCtBnclJymnBUJs
+53d6hMrzIgUS4XFYLD9R9mbAWvWN63iCB8TSew/TtP9/de7x6jI2Vm6EWvonfTqx
+idE5i8tnr0olr5OpE6hpYEDdqNZZOL8F1Q1J2EmlKxy5boU8Nu2x1EgKZlSjh/Q+
+QYzXF+GwFYDwvejRJn0p4RL9RHoTH0+BcHunj2bYQBihixnYiBVmPaclSEHsv78r
+to+3KnNlqLPziXdoSruHnAA6tpwZV0fPbPZtLJBrQU5G5SbXKuFLMRSbPqhFnFSB
+ip3Kh+Zu/UwtdnBEvRg9Xht5bk697qEri+XaEBuvq6nBCwtzQcAxtoNk5GbWtk4Q
+od+83KR8bJBwD7ZNOPlAKD4WR3xj9CEaG7XKtZGKFcvKzScvCN37x/4iwilTIMef
+lH9KlaZ+6aC6L/+y1pvHQQ6Ls4hhNGhjhpKRU1bvDIaLlqdylXQkjXkLIOZ4XL9Z
+d4M4iOIu4Dn8jRDgEJBi9S9ppnKDTlxJcRfDkW9QfdVEGFxmvjRsA4toTA1gNNrb
+0pzh6XRRAQl7MtV6qcrpQji8mDNyby8v3HwXChsHcWpS0dRKXEKvo77zEwwaOewL
+4TbVM3hoNtQhu3lJ3iv62aOaVmox5vR0q4chaJlMqGgXYBOmarwdMEm8WuiIJGDl
+UKMgvbATbJjpiaJ3ePY0VgLQp/2fziuav8IhKnQIPeHdUTuVgswn/0eYBRPZ4xoe
+wknVReDGyWIStCMHZYe2f289IUNpE00kybMAYg+O5ZTE+IHOogfoVw==
+-----END RSA PRIVATE KEY-----`,
+};
