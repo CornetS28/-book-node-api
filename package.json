@@ -13,6 +13,7 @@
     "lint-staged": "^11.1.1"
   },
   "scripts": {
+    "dev": "nodemon --config nodemon.json src/app.ts",
     "prepare": "husky install",
     "lint": "eslint .",
     "lint:fix": "eslint --fix ."
