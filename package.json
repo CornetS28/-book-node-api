@@ -1,0 +1,8 @@
+{
+  "name": "book-node-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:CornetS28/-book-node-api.git",
+  "author": "Samuel Cornet <corsam28@gmail.com>",
+  "license": "MIT"
+}
