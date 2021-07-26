@@ -8,7 +8,7 @@ export interface BookDocument extends mongoose.Document {
   description: string;
   publisher: string;
   publicationYear: number;
-  authors: unknown;
+  authors: string;
   ISBN: string;
   createdAt: Date;
   updatedAt: Date;
@@ -28,7 +28,10 @@ const BookSchema = new mongoose.Schema(
     description: { type: String, default: true },
     publisher: { type: String, default: true },
     publicationYear: { type: Number, default: true },
-    authors: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Author' }],
+    author: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Author',
+    },
     ISBN: { type: String, default: true, unique: true },
   },
   { timestamps: true }
