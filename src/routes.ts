@@ -15,6 +15,15 @@ import {
   getBooksHandler,
 } from './controller/book.controller';
 import { createBookSchema, updateBookSchema, deleteBookSchema } from './schema/book.schema';
+import {
+  createAuthorHandler,
+  updateAuthorHandler,
+  getAuthorHandler,
+  deleteAuthorHandler,
+  getAuthorsHandler,
+} from './controller/author.controller';
+
+import { createAuthorSchema, updateAuthorSchema, deleteAuthorSchema } from './schema/author.schema';
 
 export default function (app: Express) {
   app.get('/route-health-check', (req: Request, res: Response) => res.sendStatus(200));
@@ -45,4 +54,21 @@ export default function (app: Express) {
 
   // Delete a book
   app.delete('/api/books/:bookId', [requiresUser, validateRequest(deleteBookSchema)], deleteBookHandler);
+
+  ///sdfdghj
+
+  // Create a author
+  app.post('/api/authors', [requiresUser, validateRequest(createAuthorSchema)], createAuthorHandler);
+
+  // Update a author
+  app.put('/api/authors/:authorId', [requiresUser, validateRequest(updateAuthorSchema)], updateAuthorHandler);
+
+  // Get all authors
+  app.get('/api/authors', getAuthorsHandler);
+
+  // Get a author
+  app.get('/api/authors/:authorId', getAuthorHandler);
+
+  // Delete a author
+  app.delete('/api/authors/:authorId', [requiresUser, validateRequest(deleteAuthorSchema)], deleteAuthorHandler);
 }
