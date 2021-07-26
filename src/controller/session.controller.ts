@@ -1,6 +1,6 @@
 import config from 'config';
 import { get } from 'lodash';
-import { Request, Response } from 'express';
+import type { Request, Response } from 'express';
 import { validatePassword } from '../service/user.service';
 import { createSession, createAccessToken, updateSession, findSessions } from '../service/session.service';
 import { sign } from '../utils/jwt.utils';
