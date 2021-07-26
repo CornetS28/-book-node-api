@@ -8,7 +8,7 @@ const payload = {
       .min(120, 'Description is too short - should be 120 chars minimum.'),
     publisher: string().required('Publisher is required').min(3, 'Publisher is too short - should be 3 chars minimum.'),
     publicationYear: number().required('Publication year is required'),
-    author: string(),
+    author: string().required('Author is required'),
     ISBN: string().required('ISBN is required').min(13, 'ISBN should be 13 chars minimum.'),
   }),
 };
