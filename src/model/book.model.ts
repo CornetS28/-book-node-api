@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import { nanoid } from 'nanoid';
-import { UserDocument } from './user.model';
+import type { UserDocument } from './user.model';
 
 export interface BookDocument extends mongoose.Document {
   user: UserDocument['_id'];
@@ -8,7 +8,7 @@ export interface BookDocument extends mongoose.Document {
   description: string;
   publisher: string;
   publicationYear: number;
-  authors: string[];
+  authors: unknown;
   ISBN: string;
   createdAt: Date;
   updatedAt: Date;

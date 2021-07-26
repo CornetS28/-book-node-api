@@ -16,6 +16,9 @@ module.exports = {
     eqeqeq: 'error',
     '@typescript-eslint/consistent-type-imports': 'warn',
     'no-console': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'ts-expect-error': 'allow-with-description',
+    '@typescript-eslint/ban-ts-comment': 'off',
   },
   settings: {
     'import/parsers': {

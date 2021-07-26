@@ -1,4 +1,4 @@
-import { Request, Response } from 'express';
+import type { Request, Response } from 'express';
 import { get } from 'lodash';
 import { createBook, findBook, findAndUpdate, deleteBook, findAllBooks } from '../service/book.service';
 

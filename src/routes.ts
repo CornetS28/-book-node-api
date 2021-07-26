@@ -1,4 +1,4 @@
-import { Express, Request, Response } from 'express';
+import type { Express, Request, Response } from 'express';
 import { createUserHandler } from './controller/user.controller';
 import { validateRequest, requiresUser } from './middleware';
 import {
@@ -25,6 +25,7 @@ import {
 
 import { createAuthorSchema, updateAuthorSchema, deleteAuthorSchema } from './schema/author.schema';
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export default function (app: Express) {
   app.get('/route-health-check', (req: Request, res: Response) => res.sendStatus(200));
 
@@ -54,8 +55,6 @@ export default function (app: Express) {
 
   // Delete a book
   app.delete('/api/books/:bookId', [requiresUser, validateRequest(deleteBookSchema)], deleteBookHandler);
-
-  ///sdfdghj
 
   // Create a author
   app.post('/api/authors', [requiresUser, validateRequest(createAuthorSchema)], createAuthorHandler);

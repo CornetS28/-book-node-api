@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import { nanoid } from 'nanoid';
-import { UserDocument } from './user.model';
+import type { UserDocument } from './user.model';
 
 export interface AuthorDocument extends mongoose.Document {
   user: UserDocument['_id'];
